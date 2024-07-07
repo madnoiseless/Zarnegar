@@ -89,7 +89,7 @@ app.get("/find-item", async function (req, res) {
 
   try {
     const foundItem = await commodity.findOne({ id: searchId });
-    res.render("find-item", { item: foundItem, err: null });
+    res.render("find-item", { item: foundItem, err: null, searchId: searchId });
   } catch (err) {
     // Handle errors including CastError
     console.error(err);
