@@ -1,0 +1,11 @@
+<%- include("partials/header"); %>
+<h1>All items</h1>
+
+<%if(Commodities.length > 0){ Commodities.forEach((commodity) => { %>
+
+<h2>Name: <%=commodity.name01%></h2>
+<p>ID: <%if(commodity.id){ %> <%=commodity.id%> <% } %></p>
+
+<%});}else{ %>
+<p>No Commodities found.</p>
+<% } %> <%- include("partials/footer"); %>

@@ -1,0 +1,71 @@
+<%- include("partials/header") -%>
+
+<h1>New</h1>
+<form class="form" action="/new" method="post">
+  <div class="form-group">
+    <label for="commodityId">ID</label>
+    <input
+      class="form-control"
+      type="text"
+      name="commodityId"
+      id="commodityId"
+      value=""
+      required
+      maxlength="50"
+    />
+  </div>
+  <div class="form-group">
+    <label for="commodityName01">Name</label>
+    <input
+      class="form-control"
+      type="text"
+      name="commodityName01"
+      id="commodityName01"
+      value=""
+      required
+      maxlength="100"
+    />
+  </div>
+  <div class="form-group">
+    <label for="commodityWeight">Weight</label>
+    <input
+      class="form-control"
+      type="text"
+      name="commodityWeight"
+      id="commodityWeight"
+      value=""
+      required
+      maxlength="20"
+    />
+  </div>
+  <div class="form-group">
+    <label for="commodityfineness">Fineness</label>
+    <input
+      class="form-control"
+      type="text"
+      name="commodityfineness"
+      id="commodityfineness"
+      value=""
+      required
+      maxlength="10"
+    />
+  </div>
+  <div class="form-group">
+    <label for="commodityprice">Price</label>
+    <input
+      class="form-control"
+      type="text"
+      name="commodityprice"
+      id="commodityprice"
+      value=""
+      required
+      maxlength="20"
+    />
+  </div>
+  <button class="btn" type="submit" name="button" value="">Save</button>
+  <a href="/"
+    ><button class="btn" type="button">Back to Home</button></a
+  >
+</form>
+
+<%- include("partials/footer") -%>
